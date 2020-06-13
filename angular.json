@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "yale"
+    }
+  },
+  "defaultProject": "yale",
+  "cli": {
+    "analytics": "fcbf116a-42fd-4b4e-94cc-b809a87b871b"
+  }
 }
