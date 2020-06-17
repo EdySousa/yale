@@ -1,0 +1,18 @@
+.menu-wrapper {
+    padding: 8px 8px 8px 32px;
+    white-space: nowrap;
+    font-size: 12px;
+
+    &:hover {
+        background-color: #666666;
+        color: #ffad1f;
+    }
+
+    /* prevent selectable */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}

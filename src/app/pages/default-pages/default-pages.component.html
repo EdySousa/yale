@@ -1,0 +1,11 @@
+<app-header [isHomeActivatedRoute]="isHomeActivatedRoute" [isMenuActive]="menuService.isOpen()" (menuClick)="menuService.toggle()"></app-header>
+
+<app-sidenav>
+    <app-sidenav-menu></app-sidenav-menu>
+</app-sidenav>
+
+<main class="content-area">
+    <router-outlet></router-outlet>
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,77 @@
+@import "../../../scss/yale_colors.scss";
+@import "../../../scss/yale_constants.scss";
+
+.opac-layer {
+    /*structure*/
+    position: fixed;
+    display: hidden;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+
+    /*style*/
+    background-color: $yale-opac;
+
+    /*animation*/
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.opac-layer-visible {
+    /*animation*/
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#sidenav {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    /* style */
+    background-color: $yale-white;
+    border-right: 1px solid #979797;
+
+    /* animation */
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    .separator-menu {
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        border-bottom: 2px solid #707070;
+    }
+}
+
+.sidenav-main {
+    margin-top: #{$header-height};
+    padding-top: 8px;
+    cursor: pointer;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    /* animation */
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}

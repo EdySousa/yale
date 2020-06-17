@@ -1,0 +1,89 @@
+@import "../../../scss/yale_colors.scss";
+
+header {
+    position: fixed;
+    width: calc(100% - 16px);
+    padding: 0 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+
+    /*style*/
+    border-bottom: 2px solid $yale-arrow;
+    background-color: $yale-white;
+
+    /* prevent selectable */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .menu-button {
+        padding: 8px 8px 0px 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $yale-menu-separator;
+        }
+    }
+
+    .active{
+        background-color: $yale-footer;
+    }
+
+    .logo {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .shopping-cart {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        .shopping-cart-counter {
+            position: relative;
+            top: -10px;
+
+            color: $yale-red;
+            font-weight: bold;
+        }
+    }
+
+    .personal-area {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        padding-left: 16px;
+        padding-right: 8px;
+        .personal-area-text {
+            margin-left: 5px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .shopping-cart-text {
+        display: none;
+    }
+    .personal-area-text {
+        display: none;
+    }
+}

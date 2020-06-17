@@ -1,0 +1,39 @@
+<header>
+    <div class="left-section">
+        <div class="menu-button" [class.active]="isMenuActive" (click)="menuClickCallback()">
+            <svg width="18" height="25" viewBox="0 0 18 25">
+                <g id="Grupo_137" data-name="Grupo 137" transform="translate(-26 -14)">
+                    <path [attr.fill]="isMenuActive ? '#ffad1f' : '#0e0e0e'" id="ic_menu_24px" d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z" transform="translate(23 8)" />
+                    <text [attr.fill]="isMenuActive ? '#ffad1f' : '#0e0e0e'" id="_Menu" data-name="Menu" transform="translate(26 27)" font-size="7"
+                        font-family="SegoeUI, Segoe UI">
+                        <tspan x="0" y="0"></tspan>
+                        <tspan x="0" y="10">Menu</tspan>
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <div class="logo"> <img src="./assets/images/yale.png" alt=""> </div>
+    </div>
+    <div class="center-section" *ngIf="isHomeActivatedRoute">
+        ola
+    </div>
+    <div class="right-section">
+        <div class="shopping-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path id="ic_shopping_cart_24px"
+                    d="M7,18a2,2,0,1,0,2,2A2,2,0,0,0,7,18ZM1,2V4H3l3.6,7.59L5.25,14.04A1.933,1.933,0,0,0,5,15a2.006,2.006,0,0,0,2,2H19V15H7.42a.248.248,0,0,1-.25-.25l.03-.12L8.1,13h7.45a1.991,1.991,0,0,0,1.75-1.03l3.58-6.49A.977.977,0,0,0,21,5a1,1,0,0,0-1-1H5.21L4.27,2H1ZM17,18a2,2,0,1,0,2,2A2,2,0,0,0,17,18Z"
+                    transform="translate(-1 -2)" />
+            </svg>
+            <div class="shopping-cart-counter">0</div>
+            <div class="shopping-cart-text">Carrinho de compras</div>
+        </div>
+        <div class="personal-area">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path id="ic_account_circle_24px"
+                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,3A3,3,0,1,1,9,8,3,3,0,0,1,12,5Zm0,14.2a7.2,7.2,0,0,1-6-3.22c.03-1.99,4-3.08,6-3.08s5.97,1.09,6,3.08A7.2,7.2,0,0,1,12,19.2Z"
+                    transform="translate(-2 -2)" />
+            </svg>
+            <div class="personal-area-text">Area pessoal</div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,74 @@
+<div class="footer-mobile">
+    <div class="row" (click)="open(1)">
+        <div>
+            <div class="title">Yale</div>
+            <div class="subtitle" *ngIf="isOpenFirst">Início</div>
+            <div class="subtitle" *ngIf="isOpenFirst">Empresa</div>
+            <div class="subtitle" *ngIf="isOpenFirst">Que Somos</div>
+            <div class="subtitle" *ngIf="isOpenFirst">Serviços</div>
+        </div>
+        <div class="plus">
+            <svg *ngIf="!isOpenFirst" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                <path id="ic_add_24px" d="M19,13H13v6H11V13H5V11h6V5h2v6h6Z" transform="translate(-5 -5)"
+                    fill="#ffad1f" />
+            </svg>
+            <svg *ngIf="isOpenFirst" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                <path id="ic_remove_24px" d="M19,13H5V11H19Z" transform="translate(-5 -11)" fill="#ffad1f" />
+            </svg>
+        </div>
+    </div>
+    <div class="row" (click)="open(2)">
+        <div>
+            <div class="title">Apio ao cliente</div>
+            <div class="subtitle" *ngIf="isOpenSecond">Contactos</div>
+            <div class="subtitle" *ngIf="isOpenSecond">Pagamentos</div>
+            <div class="subtitle" *ngIf="isOpenSecond">Entrega</div>
+        </div>
+        <div class="plus">
+            <svg *ngIf="!isOpenSecond" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                <path id="ic_add_24px" d="M19,13H13v6H11V13H5V11h6V5h2v6h6Z" transform="translate(-5 -5)"
+                    fill="#ffad1f" />
+            </svg>
+            <svg *ngIf="isOpenSecond" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                <path id="ic_remove_24px" d="M19,13H5V11H19Z" transform="translate(-5 -11)" fill="#ffad1f" />
+            </svg>
+        </div>
+    </div>
+    <div class="row" (click)="open(3)">
+        <div>
+            <div class="title">Siga-nos</div>
+            <div class="subtitle" *ngIf="isOpenThird">Facebook</div>
+            <div class="subtitle" *ngIf="isOpenThird">Instagram</div>
+        </div>
+        <div class="plus">
+            <svg *ngIf="!isOpenThird" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                <path id="ic_add_24px" d="M19,13H13v6H11V13H5V11h6V5h2v6h6Z" transform="translate(-5 -5)"
+                    fill="#ffad1f" />
+            </svg>
+            <svg *ngIf="isOpenThird" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                <path id="ic_remove_24px" d="M19,13H5V11H19Z" transform="translate(-5 -11)" fill="#ffad1f" />
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="footer-laptop">
+    <div class="column">
+        <div class="title">Yale</div>
+        <div class="subtitle">Início</div>
+        <div class="subtitle">Empresa</div>
+        <div class="subtitle">Que Somos</div>
+        <div class="subtitle">Serviços</div>
+    </div>
+    <div class="column">
+        <div class="title">Apio ao cliente</div>
+        <div class="subtitle">Contactos</div>
+        <div class="subtitle">Pagamentos</div>
+        <div class="subtitle">Entrega</div>
+    </div>
+    <div class="column">
+        <div class="title">Siga-nos</div>
+        <div class="subtitle">Facebook</div>
+        <div class="subtitle">Instagram</div>
+    </div>
+</div>
